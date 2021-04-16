@@ -20,7 +20,7 @@
       <th>
         <%= link_to 'Movie Titles', movies_path({sort_by: 'title',
                                      ratings: @ratings_to_show}),
-          id: 'title_header',  class:('bg_warning hilite' if @sort_by == 'title')%>
+          id: 'title_header',  class:("bg_warning hilite" if @sort_by == 'title')%>
       </th>
       <th>Rating</th>
       <th>
@@ -43,7 +43,7 @@
           <%= movie.release_date %>
         </td>
         <td>
-          <%= link_to 'More about #{movie.title}', movie_path(movie) %>
+          <%= link_to "More about #{movie.title}", movie_path(movie) %>
         </td>
       </tr>
     <% end %>
